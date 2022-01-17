@@ -1,0 +1,292 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/*Contact section*/
+.contact__container{
+    background: #eee;
+    padding: 0px 0px;
+}
+.contact__wrapper{
+    display: flex;
+    padding-top: 20px;
+}
+.stroke{
+    padding: 0px 40px;
+}
+/*navbar section*/
+.navbar__logo{
+    width: 150px;
+}
+.navbar__container{
+    z-index: 1;
+    width: 100%;
+    background: #fff!important;
+}
+.navbar__wrapper{
+    margin: 20px 0px;
+    background: #fff!important;
+}
+.nav-item{
+    padding: 0px 10px;
+}
+.nav-link{
+    color: #123123;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #4BAF33;;
+}
+.nav-btn{
+    color: #123123;
+    background: #fff;
+    border: 2px solid #4BAF33;
+    border-radius: 18px;
+    padding: 10px 30px;
+    font-weight: 500;
+    transition: all ease 0.3s;
+}
+.nav-btn:hover{
+    background: #4BAF33;
+    color: #fff;
+    transition: all ease 0.3s;
+}
+.highlight{
+    border: 5px solid #4BAF33;
+}
+/*Showcase section*/
+.showcase__container{
+    background: url(/images/initsvack2.jpeg);
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.showcase__wrapper{
+    color: #fff;
+    padding-top: 240px;
+}
+.showcase__paragraph{
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 10px;
+    margin: 0px;
+}
+.showcase__paragraph2{
+    width: 60%;
+    font-size: 18px;
+}
+.aboutus{
+    display: flex;
+}
+.about__us{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*Our services section*/
+.services__container{
+    margin: 100px 0px;
+}
+.services__heading{
+    text-align: center;
+}
+.services__paragraph{
+    text-align: center;
+    font-size: 18px;
+    width: 70%;
+    margin: auto;
+}
+/*Services CARDS*/
+.services__cards{
+    margin-top: 70px;
+}
+.service__card{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    border: 1px solid #4BAF33;
+    
+    padding: 10%;
+    text-align: center;
+    margin: 50px auto;
+}
+.service__card__heading{
+    font-size: 20px;
+    /* width: 250px; */
+    /* padding-top: 80px; */
+    /* padding-left: 80px; */
+}
+.service__card__paragraph{
+    padding-left: 0px;
+    justify-content: center;
+    text-align: center;
+}
+.service__card__about{
+    justify-content: center;
+    text-align: center;
+}
+.service__card__image{
+    padding-left: 110px;
+}
+.service__card__heading2{
+    font-size: 28px;
+    width: 250px;
+    padding-top: 80px;
+    padding-left: 90px;
+    justify-content: center;
+    text-align: center;
+}
+.service__card__paragraph2{
+    justify-content: center;
+    text-align: center;
+}
+.service__card__heading3{
+    font-size: 28px;
+    /* width: 250px; */
+    /* padding-top: 80px;
+    padding-left: 90px; */
+    /* text-align: center; */
+    /* justify-content: center; */
+}
+
+.service__card__paragraph3{
+    padding: 0px 10px;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+}
+.services__cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.help__heading{
+    background: #11998e;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #38ef7d, #11998e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 36px;
+}
+.touch{
+    display: flex;
+    justify-content: center;
+}
+.touch__paragraph{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*Why choose us section*/
+.choose__container{
+    background: url(/images/cube__4.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    margin-bottom: 70px;
+}
+.choose__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 80px;
+    color: #fff;
+}
+.wrap__oneb{
+padding-top: 30px;
+font-size: 16px;
+font-weight: 500;
+width: 90%;
+}
+.wrap__two{
+    display: flex;
+    padding-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.wrap__two p{
+    padding-top: 16px;
+    padding-left: 20px;
+}
+/*sub__choose__section*/
+.sub__choose__card{
+    background:#303030;
+    border-radius: 4px;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding:20px 0px;
+}
+.sub__choose__wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#sub__choose__image{
+    width: 50px!important;
+
+}
+.sub__choose__text{
+    font-size: 12px;
+    color: #909090;
+}
+
+/*some works section*/
+.some__works__wrapper{
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.some__works__paragraph{
+    width: 70%;
+    margin: auto;
+    padding: 20px 0px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section{
+    padding: 80px;
+}
+
+.service__card .card-inn{
+    margin: auto;
+}
+
+
+.service__card .card-title{
+    display: block;
+}
+
+.service__card .card-body{
+    display: none;
+    padding: 0;
+}
+
+.service__card:hover .card-body{
+    display: block;
+}
+
+.service__card:hover .card-title h1{
+    font-size: 28px;
+}
+
+
+.service__card:hover .card-body .cta{
+    margin: 20px 0 0 ;
+}
+
+.service__card:hover .card-body .cta a{
+    color: #303030;
+    font-size: 10px;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+} 
+
+.service__card:hover .card-body .cta a span{
+    display: block ;
+}
