@@ -33,9 +33,10 @@ body{
 .nav-link{
     color: #123123;
     font-weight: 500;
+    font-size: 16px;
 }
 .nav-link:hover{
-    color: #4BAF33;;
+    color: #4BAF33!important;
 }
 .nav-btn{
     color: #123123;
@@ -66,7 +67,7 @@ body{
     padding-top: 240px;
 }
 .showcase__paragraph{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     padding-top: 10px;
     margin: 0px;
@@ -84,6 +85,22 @@ body{
     font-size: 18px;
     font-weight: 500;
 }
+@media screen and (max-width:768px) {
+    .showcase__heading{
+        font-size: 24px;
+    }
+
+    .services__heading{
+        font-size: 24px;
+        text-align: center;
+    }
+    .about__us{
+        margin-top: 20px;
+        margin-left: 20px;
+        font-size: 1px;
+        font-weight: 300;
+    }
+}
 
 /*Our services section*/
 .services__container{
@@ -98,69 +115,31 @@ body{
     width: 70%;
     margin: auto;
 }
-/*Services CARDS*/
-.services__cards{
-    margin-top: 70px;
+
+@media screen and (max-width:768px) {
+    .services__paragraph{
+        text-align: center;
+        font-size: 16px;
+        width: 80%;
+        margin: auto;
+    }
+    .services__heading{
+        font-size: 24px;
+        text-align: center;
+    }
 }
+/*Services CARDS*/
+
 .service__card{
     width: 350px;
     height: 350px;
     border-radius: 50%;
     border: 1px solid #4BAF33;
-    
     padding: 10%;
     text-align: center;
     margin: 50px auto;
 }
-.service__card__heading{
-    font-size: 20px;
-    /* width: 250px; */
-    /* padding-top: 80px; */
-    /* padding-left: 80px; */
-}
-.service__card__paragraph{
-    padding-left: 0px;
-    justify-content: center;
-    text-align: center;
-}
-.service__card__about{
-    justify-content: center;
-    text-align: center;
-}
-.service__card__image{
-    padding-left: 110px;
-}
-.service__card__heading2{
-    font-size: 28px;
-    width: 250px;
-    padding-top: 80px;
-    padding-left: 90px;
-    justify-content: center;
-    text-align: center;
-}
-.service__card__paragraph2{
-    justify-content: center;
-    text-align: center;
-}
-.service__card__heading3{
-    font-size: 28px;
-    /* width: 250px; */
-    /* padding-top: 80px;
-    padding-left: 90px; */
-    /* text-align: center; */
-    /* justify-content: center; */
-}
 
-.service__card__paragraph3{
-    padding: 0px 10px;
-    justify-content: center;
-    text-align: center;
-    width: 350px;
-}
-.services__cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
 .help__heading{
     background: #11998e;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom, #38ef7d, #11998e);  /* Chrome 10-25, Safari 5.1-6 */
@@ -181,7 +160,7 @@ body{
     margin-top: 20px;
     margin-left: 20px;
 }
-/*our services section*/
+/*our services section(new arrangement)*/
 section{
     padding: 80px;
 }
@@ -223,6 +202,64 @@ section{
 .service__card:hover .card-body .cta a span{
     display: block ;
 }
+@media screen and (max-width:768px) {
+    section{
+        padding: 80px;
+    }
+    
+    .service__card{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        border: 1px solid #4BAF33;
+        padding: 5%;
+        text-align: center;
+        margin: 30px auto;
+    }
+    .service__card .card-inn{
+        margin: auto;
+    }
+    
+    
+    .service__card .card-title {
+        display: block;
+    }
+    .service__card .card-title h1{
+        display: block;
+        font-size: 12px!important;
+    }
+    
+    
+    .service__card .card-body{
+        display: none;
+        padding: 0;
+    }
+    
+    .service__card:hover .card-body{
+        display: block;
+        font-size: 9px!important;
+    }
+    
+    .service__card:hover .card-title h1{
+        font-size: 24px;
+    }
+    
+    
+    .service__card:hover .card-body .cta{
+        margin: 5px 0 0 ;
+    }
+    
+    .service__card:hover .card-body .cta a{
+        color: #303030;
+        font-size: 10px;
+        letter-spacing: 1.4px;
+        text-decoration: none;
+    } 
+    
+    .service__card:hover .card-body .cta a span{
+        display: block ;
+    }
+}
 
 /*Why choose us section*/
 .choose__container{
@@ -235,14 +272,16 @@ section{
 .choose__wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 0px;
     padding-top: 80px;
     color: #fff;
+    width: 100%;
 }
 .wrap__oneb{
 padding-top: 30px;
 font-size: 16px;
 font-weight: 500;
-width: 90%;
+width: 80%;
 }
 .wrap__two{
     display: flex;
@@ -262,10 +301,11 @@ width: 90%;
     text-align: center;
     margin: auto;
     padding:20px 0px;
+    width: 70%;
 }
 .sub__choose__wrapper{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr;
     gap: 20px;
 }
 #sub__choose__image{
@@ -279,6 +319,30 @@ width: 90%;
 .sub__choose__text{
     font-size: 12px;
     color: #909090;
+}
+@media screen and (max-width:768px){
+    .choose__container{
+        background: url(/images/cube__4.jpeg);
+        background-position: center;
+        background-size: cover;
+        height: 800px;
+        margin-bottom: 70px;
+    }
+    .choose__wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0px;
+        padding-top: 80px;
+        color: #fff;
+        width: 100%;
+        margin: auto;
+    }
+    .sub__choose__wrapper{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr;
+        gap: 20px;
+    }
 }
 
 /*some works section*/
@@ -343,7 +407,7 @@ width: 90%;
 .footercard{
     background: #eee;
 }
-.footerimagecard{
+.footerimage{
     max-width: 100%;
     margin: auto;
     height: auto; 
@@ -353,9 +417,230 @@ width: 90%;
 .footercard h5{
     padding-bottom: 20px;
 }
-/*footer2*/
+.col h5{
+    padding-bottom: 20px;
+}
+@media screen and(max-width:765px) {
+   .col h5{
+       font-size: 10px;
+   }
+   .footerimage img{
+       width: 200px;
+   }
+}
+/*footer2 image*/
+.fixed-img{
+    position: fixed;
+    bottom: 0vh;
+    z-index: 9999;
+    right: 50px;
+}
 
-.fi{
+.fixed-img img{
     width: 150px;
+}
+
+
+/*CSS FOR ABOUT-US PAGE*/
+.down-arrow video{
+    width: 100%;
     height: auto;
+}
+.down-arrow p{
+    position: absolute;
+    color: #fff;
+    top: 600px;
+    left: 600px;
+}
+.down-arrow img{
+    position: absolute;
+    color: #fff;
+    top: 700px;
+    left: 700px;
+}
+/* OUR STORY */
+.our-story {
+    background: url(/images2/pttn-bg-grey.jpeg);
+    width: 100%;
+    text-align: center;
+    padding: 40px 0px;
+}
+.our-story p{
+    width: 60%;
+    margin: auto;
+}
+.our-story p:nth-child(2){
+    padding: 20px 0px;
+}
+.our-story p:nth-child(3){
+    padding: 20px 0px;
+}
+/* OUR MISSION */
+.mission{
+    background: url(/images2/pttn-bg-dark.jpeg);
+    width: 100%;
+    height: 900px;
+    padding: 80px 0px;
+    justify-content: center;
+}
+.mission-image{
+    width: 60px;
+}
+.card.mission{
+    width: 100%!important;
+    height: 350px;
+    padding: 40px;
+    justify-content: center;
+    color: #fff;
+    background:url(/images2/missioncard.jpeg);
+    font-size: 22px;
+    margin: 0px;
+}
+.card.mission2{
+    height: 350px;
+    background-size: cover;
+    background-image: url(/images2/mrtunde.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+.card.mission3{
+    height: 350px;
+    background-size: cover;
+    background-image: url(/images2/mixGroup.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: block;
+}
+
+.card.mission4{
+    width: 100% !important;
+    height: 350px;
+    padding: 40px;
+    justify-content: center;
+    color: #fff;
+    background:url(/images2/missioncard2.jpeg);
+    font-size: 22px;
+}
+.vision{
+    margin-top: 20px;
+}
+.furthermore{
+    background-image: url(/images2/pttn-bg-grey.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.further{
+    margin: auto;
+    padding: 80px 0px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    width: 70%;
+}
+
+/* INITS TEAM SECTION */
+.team-info{
+    margin: auto;
+    padding: 60px 0px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 80%;  
+}
+/* INITS TEAM PROFILES */
+/* profile-front card */
+.rt-1image{
+    height: 120px;
+    width: 120px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    margin: auto;
+}
+.card.profile-front{
+    width: 350px; 
+    height: 100%;
+    text-align: center;
+    padding: 40px 10px;
+    font-size: 14px;
+    font-weight: 300;
+    box-shadow: rgba(170, 170, 170, 0.2) 0px 4px 24px;
+    border: none;
+}
+.card-title.profile-name{
+    color: #4BAF33;
+    padding: 10px 0px;
+}
+.card-text.profile-role{
+    padding: 10px 0px;
+}
+/* profile-back card */
+.card.profile-back{
+    /* width: 480px;
+    height: 380px; */
+    display: flex;
+    flex-direction: row;
+}
+.card.profile-back{
+    background-size: contain;
+    background-position: left top;
+    background-repeat: no-repeat;
+    width: 45%;
+    height: 100%;
+    float: left;
+    display: block;
+}
+.description{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+}
+
+
+ul.team{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.team li{
+    list-style: none;
+    margin: 20px;
+    width: 360px;
+    height: 400px;
+}
+
+.team li:hover {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.card.profile-front{
+    display: block;
+}
+
+.card.profile-back{
+    display: none;
+}
+
+.team li:hover .card.profile-front {
+    display: none;
+}
+
+.team li:hover .card.profile-back{
+    display: block;
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.description .card-body{
+    overflow-y: scroll;
 }

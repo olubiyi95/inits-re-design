@@ -12,10 +12,6 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <!--Slick slider for carousel-->
-  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  <!-- // Add the new slick-theme.css if you want the default styling -->
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <!-- owl carousel link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
@@ -36,41 +32,37 @@
     </div>
 
     <!--navbar section-->
-    <div class="navbar__container sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container">
-            <div class="navbar__wrapper">
-                <nav class="navbar navbar-expand-lg">
-                        <img src="/images/inits-logo.png" alt="" class="navbar__logo">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                          </button>
-                          <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ms-auto">
-                              <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#" id="home-page">Home</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#">About Us</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#">Services</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#">Porfolio</a>
-                              </li>
-                              <li class="nav-item">
-                                <a class="nav-link active" href="#">Career</a>
-                              </li>
-                              <li class="nav-item">
-                                <button type="button" class="nav-btn btn-primary btn-sm">Contact</button>
-                              </li>
-                            </ul>
-                          </div>
-                  </nav>
-            </div>
+         <img src="/images/inits-logo.png" alt="" class="navbar__logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#" id="home-page">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="/about-us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#" id="services-page">Services</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Porfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Career</a>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="nav-btn btn-primary btn-sm">Contact</button>
+                  </li>
+               </ul>
+          </div>
         </div>
-    </div>
-
+      </nav>
+          
     <!--Showcase section-->
         <div class="showcase__container">
             <div class="container">
@@ -345,62 +337,46 @@
             </div>
         </div>
     </div>
+
+    <div class="fixed-img">
+        <img src="/images/NDPRlogo-end.png" >
+    </div>
+
       
     <!--footer section-->
-    <div class="footer__container">
     <div class="container">
         <div class="row">
           <div class="col">
-            <div class="card footerimaagecard border-0" style="max-width: 100%; margin: auto; height: auto; padding: 35px; justify-content: center;">
-                <img src="/images/newfooterimage.png" class="card-img-top" alt="...">
-              </div>
+            <img src="/images/logo-footer.png" class="footerimage card-img-top" alt="...">
           </div>
           <div class="col">
-            <div class="card footercard border-0">
-                <div class="card-body">
-                  <h5>OFFICIAL HOURS</h5>
-                  <P>9:00 am | 05:00pm</P>
-                  <p>Monday to Friday</p>
-                </div>
-              </div>
+            <h5>OFFICIAL HOURS</h5>
+            <P>9:00 am | 05:00pm</P>
+            <p>Monday to Friday</p>
           </div>
           <div class="col">
-            <div class="card border-0 footercard">
-                <div class="card-body">
-                  <h5>CONTACT</h5>
-                  <P>info@initsng.com</P>
-                  <p>+234 708 067 2012</p>
-                </div>
-              </div>
+            <h5>CONTACT</h5>
+            <P>info@initsng.com</P>
+            <p>+234 708 067 2012</p>
           </div>
           <div class="col">
-            <div class="card border-0 footercard">
-                <div class="card-body">
-                  <h5>ADDRESS</h5>
-                  <P>16 Majaro Street,</P>
-                  <p>Onike - Yaba</p>
-                  <p>Lagos, Nigeria</p>
-                </div>
-              </div>
+            <h5>ADDRESS</h5>
+            <P>16 Majaro Street,</P>
+            <p>Onike - Yaba</p>
+            <p>Lagos, Nigeria</p>
           </div>
           <div class="col">
-            <div class="card border-0 footercard">
-                <div class="card-body">
-                  <h5>QUICK LINKS</h5>
-                  <P>FAQ</P>
-                  <p>Career</p>
-                  <p>Privacy Policy</p>
-                </div>
-            </div>
+            <h5>QUICK LINKS</h5>
+              <P>FAQ</P>
+              <p>Career</p>
+              <p>Privacy Policy</p>
           </div>
-        </div>
-        </div>
         </div>
         <!--footer2-->
         <div class="container">
-            <div class="footer2 d-flex">
-                <p class="fp mt-4 ms-auto">Copyright ©2022 INITS, All Rights Reserved.</p>
-                <img src="/images/NDPRlogo-end.png" class="fi ms-auto pt-2">
+            <div class="footer2 ">
+                <p class="fp mt-4 text-center">Copyright ©2022 INITS, All Rights Reserved.</p>
+                <!-- <img src="/images/NDPRlogo-end.png" class="fi ms-auto pt-2"> -->
             </div>
         </div>
  
@@ -447,8 +423,8 @@
             },
 
             768: {
-                items: 2,
-                stagePadding: 100
+                items: 3,
+                stagePadding: 0
             },
 
             950:{
@@ -500,7 +476,7 @@
 
             768: {
                 items: 2,
-                stagePadding: 100
+                stagePadding: 50
             },
 
             950:{
